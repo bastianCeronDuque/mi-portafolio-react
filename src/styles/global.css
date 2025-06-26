@@ -20,3 +20,8 @@ button {
 button:hover {
   transform: scale(1.05);
 }
+.text-gradient-muted{
+  background: var(--color-muted-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

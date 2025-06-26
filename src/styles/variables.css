@@ -3,6 +3,7 @@
   --color-primary: #8b5cf6;
   --color-accent: #f97316;
   --color-text: #f8fafc;
-  --color-muted: #475569;
+  --color-muted: #5e6776;
+  --color-muted-gradient: linear-gradient(90deg, #3a4555, #a9b7cb);
   --font-main: "Poppins", sans-serif;
 }
