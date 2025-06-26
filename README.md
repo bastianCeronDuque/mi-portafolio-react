@@ -5,7 +5,7 @@ Este proyecto es mi portafolio personal, donde comparto mis habilidades, proyect
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
