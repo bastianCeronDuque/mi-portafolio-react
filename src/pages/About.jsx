@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import devImg from "../assets/bastian-dev.jpg";
 export default function About() {
   return (
     <motion.div
@@ -35,6 +35,16 @@ export default function About() {
         tecnologías modernas como React, React Router, Vite, Framer Motion y
         más. Este sitio crecerá conmigo a medida que aprenda. 💪🚀
       </p>
+      <motion.img
+      src={devImg}
+      alt="Desarrollador Frontend"
+      className="dev-img"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1, delay: 0.5 }}
+      >
+
+      </motion.img>
     </motion.div>
   );
 }
