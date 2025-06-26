@@ -1,12 +1,36 @@
-# React + Vite
+# 💻 Portafolio Web - Bastián Cerón
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Hola! Soy Bastian Ceron, desarrollador frontend en formacion enfocado en React.
+Este proyecto es mi portafolio personal, donde comparto mis habilidades, proyectos y progreso en tiempo real mientras aprendo y prefecciono mis conocimientos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- CSS con variables y clases reutilizables
+- Animaciones y transiciones suaves
+- Despliegue en [Netlify](https://netlify.com)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 ¿Qué encontrarás aquí?
+
+- Página de inicio animada con presentación personal
+- Sección **Sobre mí** con ilustración animada
+- Próximamente: Sección de **proyectos reales**
+- Diseño responsive, colores llamativos y gradientes 🎨
+- Componentes escalables y reutilizables
+
+---
+
+## Instalacion local
+
+```bash
+git clone https://github.com/bastianCeronDuque/mi-portafolio-react
+cd mi-portafolio-react
+yarn install
+yarn dev
