@@ -1,4 +1,4 @@
-# 💻 Portafolio Web - Bastián Cerón
+# 💻 Portafolio Web - Bastian Ceron
 
 ¡Hola! Soy Bastian Ceron, desarrollador frontend en formacion enfocado en React.
 Este proyecto es mi portafolio personal, donde comparto mis habilidades, proyectos y progreso en tiempo real mientras aprendo y prefecciono mis conocimientos.
