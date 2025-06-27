@@ -1,23 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-// import Projects from './pages/Projects';
-// import Contact from './pages/Contact';
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import AnimateRoutes from "./components/AnimateRoutes";
 
-function App() {
-
+export default function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/sobre-mi' element={<About />} />
-        {/* <Route path='/proyectos' element={<Projects />} /> */}
-        {/* <Route path='/contacto' element={<Contact />} /> */}
-      </Routes>
+      <AnimateRoutes />
     </Router>
-  )
+  );
 }
-
-export default App
