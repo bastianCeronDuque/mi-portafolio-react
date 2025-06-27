@@ -26,7 +26,19 @@ Este proyecto es mi portafolio personal, donde comparto mis habilidades, proyect
 - Componentes escalables y reutilizables
 
 ---
+## Demo en linea
+👉https://bastian-ceron.netlify.app/
 
+## Contacto
+- Si quieres dejar feedback o solo saludarme, puedes encontrarme en:
+- LinkedIn: https://www.linkedin.com/in/bastian-ceron/
+- Email: bastian.ceronduque@gmail.com
+---
+## ✨ En fase de construcción
+Este portafolio está en constante crecimiento.
+¡Gracias por visitarlo y ver parte de mi camino como desarrollador! 🚀
+
+---
 ## Instalacion local
 
 ```bash
@@ -34,3 +46,4 @@ git clone https://github.com/bastianCeronDuque/mi-portafolio-react
 cd mi-portafolio-react
 yarn install
 yarn dev
+
