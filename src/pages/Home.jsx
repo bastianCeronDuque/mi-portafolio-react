@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import AnimatedToggle from "../components/AnimatedToggle";
 import devImg from "../assets/bastian-dev.jpg";
 import "../styles/Home.css";
 export default function Home() {
@@ -19,22 +20,26 @@ export default function Home() {
         src={devImg}
         alt="Desarrollador Frontend"
         className="dev-img"
+        whileHover={{ scale: 1.05, rotate: 2 }}
+        whileTap={{ scale: 0.95, rotate: -2 }}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{type:'spring',stifness: 300, damping: 20}}
         >
         </motion.img>
         <motion.button
         className="btn-accion"
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ 
+          scale: 1.1,
+          backgroundColor: 'var(--color-accent)',
+          boxShadow: "0px 0px 12px rgba(99, 102, 241, 0.6)"
+         }}
         whileTap={{ scale: 0.95 }}
         disabled
         >
           Próximamente: Mis proyectos 💻
         </motion.button>
-        <h2 style={{ fontSize: "2rem" }}>
-          🪛Estamos en fase de construccion🔨
-        </h2>
+        <AnimatedToggle />
       </motion.div>
     </>
   );

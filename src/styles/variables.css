@@ -6,4 +6,6 @@
   --color-muted: #5e6776;
   --color-muted-gradient: linear-gradient(to right, #0099ff, #ff0066);
   --font-main: "Poppins", sans-serif;
+  --color-gradient-1: #0099ff;
+  --color-gradient-2: #ff0066;
 }

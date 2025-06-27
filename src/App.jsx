@@ -5,7 +5,6 @@ import AnimateRoutes from "./components/AnimateRoutes";
 export default function App() {
   return (
     <Router>
-      <Navbar />
       <AnimateRoutes />
     </Router>
   );

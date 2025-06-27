@@ -20,8 +20,43 @@ button {
 button:hover {
   transform: scale(1.05);
 }
-.text-gradient-muted{
+.text-gradient-muted {
   background: var(--color-muted-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.main-content {
+  min-height: 80vh;
+  padding: 2rem 1 rem;
+}
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--color-bg-secondary);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+.about-container{
+  max-width: 800px;
+  margin: 5rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+.about-container-titulo{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-container-p{
+  text-align: justify;
+  font-size: 1.2rem;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+.animate-toggle-container{
+  text-align: center;
+  margin-top: 3rem;
 }
