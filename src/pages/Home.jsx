@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import AnimatedToggle from "../components/AnimatedToggle";
-import devImg from "../assets/bastian-dev.jpg";
+// import devImg from "../assets/bastian-dev.jpg";
 import "../styles/Home.css";
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
       >
         <h1 className="titulo-gradient">¡Bienvenido a mi portafolio!</h1>
         <p className="subtitulo" style={{ fontSize: "1.2rem" }}>
-          Bienvenido a mi portafolio. Aquí muestro mi progreso como desarrollador frontend en React. 
+          Bienvenido a mi espacio. Aquí muestro mi progreso como desarrollador frontend usando React. 
         </p>
-        <motion.img
+        {/* <motion.img
         src={devImg}
         alt="Desarrollador Frontend"
         className="dev-img"
@@ -25,7 +25,7 @@ export default function Home() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{type:'spring',stifness: 300, damping: 20}}
         >
-        </motion.img>
+        </motion.img> */}
         <motion.button
         className="btn-accion"
         whileHover={{ 
