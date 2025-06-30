@@ -1,0 +1,27 @@
+.gracias-wrapper {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #1618a4, #18612a, #8b24c6);
+  background-size: 400% 400%;
+  animation: bgMove 8s ease infinite;
+  color: var(--color-text);
+}
+.gracias-wrapper h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.gracias-wrapper p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
