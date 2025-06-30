@@ -5,6 +5,8 @@ import About from "../pages/About";
 // import Projects from '../pages/Projects';
 import Contact from "../pages/Contact";
 import Layout from "./Layout";
+import Gracias from "../pages/Gracias";
+
 
 export default function AnimatedRoutes() {
   const location = useLocation();
@@ -17,6 +19,7 @@ export default function AnimatedRoutes() {
           <Route path="/sobre-mi" element={<About />} />
           {/* <Route path="/proyectos" element={<Projects />} /> */}
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/gracias" element={<Gracias />} />
         </Route>
       </Routes>
     </AnimatePresence>

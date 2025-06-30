@@ -8,26 +8,12 @@ export default function Contact() {
     email: "",
     mensaje: "",
   });
-  const [enviado, setEnviado] = useState(false);
-
+  const formFree = "https://formspree.io/f/mnnvwjvz";
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Formulario enviado:", formData);
-    setEnviado(true);
-    setFormData({
-      nombre: "",
-      email: "",
-      mensaje: "",
-    });
-    setTimeout(() => {
-      setEnviado(false);
-    }, 3000);
   };
   return (
     <motion.div
@@ -41,7 +27,15 @@ export default function Contact() {
         <h2 className="titulo-pages-gradient">Contáctame</h2>
         <p>¿Tienes un proyecto o idea?</p>
         <p>¡Hablemos!</p>
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form 
+        action={formFree} 
+        method="POST" 
+        className="contact-form">
+          <input
+            type="hidden"
+            name="_redirect"
+            value="https://bastian-ceron.netlify.app/gracias"
+          />
           <motion.input
             type="text"
             name="nombre"
@@ -76,15 +70,6 @@ export default function Contact() {
           >
             Enviar
           </motion.button>
-          <AnimatePresence>
-            {enviado && <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.3 }}
-            className="contact-form-menssage"
-            >✅ ¡Mensaje enviado con éxito!</motion.div>}
-          </AnimatePresence>
         </form>
       </div>
     </motion.div>
