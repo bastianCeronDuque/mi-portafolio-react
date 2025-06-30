@@ -11,16 +11,7 @@ export default function About() {
       transition={{ duration: 0.8 }}
     >
       <FadeInWhenVisible>
-        <h1
-        className="about-container-titulo"
-          // style={{
-          //   fontSize: "2.5rem",
-          //   textAlign: "center",
-          //   color: "var(--color-primary)",
-          // }}
-        >
-          Sobre mí
-        </h1>
+        <h1 className="titulo-pages-gradient">Sobre mí</h1>
       </FadeInWhenVisible>
       <FadeInWhenVisible>
         <p className="about-container-p">
@@ -45,7 +36,7 @@ export default function About() {
         animate={{ opacity: 1, scale: 1 }}
         whileHover={{ scale: 1.05, rotate: 2 }}
         whileTap={{ scale: 0.95, rotate: -2 }}
-        transition={{type:'spring',stifness: 300, damping: 20}}
+        transition={{ type: "spring", stifness: 300, damping: 20 }}
       ></motion.img>
     </motion.div>
   );

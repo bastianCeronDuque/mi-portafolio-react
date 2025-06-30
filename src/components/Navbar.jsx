@@ -28,17 +28,7 @@ export default function Navbar() {
           {/* <Link to='/proyectos'>Proyectos</Link> */}
         </li>
         <li className={location.pathname === "/contacto" ? "active" : ""}>
-          <a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              alert("¡Esta sección aún está en construcción! 🚧");
-            }}
-            style={{ opacity: 0.5, cursor: "not-allowed" }}
-          >
-            Contacto
-          </a>
-          {/* <Link to='/contacto'>Contacto</Link> */}
+          <Link to='/contacto'>Contacto</Link>
         </li>
       </ul>
     </nav>

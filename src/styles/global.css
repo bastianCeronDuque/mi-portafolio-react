@@ -42,7 +42,7 @@ button:hover {
   padding: 0 1rem;
   text-align: center;
 }
-.about-container-titulo{
+.titulo-pages-gradient{
   font-size: 2.5rem;
   margin-bottom: 1rem;
   background: linear-gradient(to right, var(--color-gradient-1), var(--color-gradient-2));

@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 import AnimatedToggle from "../components/AnimatedToggle";
 import devImg from "../assets/bastian-dev.jpg";
 import "../styles/Home.css";
