@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import "../styles/Contact.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -8,7 +9,19 @@ export default function Contact() {
     email: "",
     mensaje: "",
   });
+  const navigate = useNavigate();
   const formFree = "https://formspree.io/f/mnnvwjvz";
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await fetch(formFree, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+      },
+      body: new FormData(e.target),
+    });
+    navigate("/gracias");
+  };
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -27,15 +40,16 @@ export default function Contact() {
         <h2 className="titulo-pages-gradient">Contáctame</h2>
         <p>¿Tienes un proyecto o idea?</p>
         <p>¡Hablemos!</p>
-        <form 
-        action={formFree} 
-        method="POST" 
-        className="contact-form">
-          <input
-            type="hidden"
-            name="_redirect"
-            value="https://bastian-ceron.netlify.app/gracias"
-          />
+        <motion.form
+          // action={formFree}
+          onSubmit={handleSubmit}
+          method="POST"
+          className="contact-form"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.95 }}
+          transition={{ duration: 0.6 }}
+        >
           <motion.input
             type="text"
             name="nombre"
@@ -70,7 +84,7 @@ export default function Contact() {
           >
             Enviar
           </motion.button>
-        </form>
+        </motion.form>
       </div>
     </motion.div>
   );

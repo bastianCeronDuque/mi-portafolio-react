@@ -11,7 +11,7 @@ export default function AnimatedToggle() {
         onClick={() => setVisible(!visible)}
         className="btn-accion2"
       >
-        {visible ? "Ocultar mensaje" : "Ver mas!"}
+        {visible ? "Ocultar" : "Ver mas!"}
       </motion.button>
       <AnimatePresence>
         {visible && (
